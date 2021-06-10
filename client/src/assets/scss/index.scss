@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import './partials/_variables';
+@import './partials/_normalize';
+@import './partials/_layout';
+@import './partials/_helpers';
+@import './partials/_forms';
+
+@import './components/_navigation';
+@import './components/_movies';
+@import './components/_movie';
+@import './components/_comments';
+@import './components/_commentForm';

@@ -1,0 +1,90 @@
+.single {
+    display: flex;
+    align-items: flex-start;
+    margin: 3rem auto;
+    background-color: white;
+    height: 40rem;
+    box-shadow: 0 0 8px rgba($color: rgb(0, 0, 0), $alpha: 0.2);
+    &__image {
+        width: 25%;
+        img {
+            height: auto;
+            width: 100%;
+            height: 40rem;
+        }
+        box-shadow: 0 0 7px rgba($color: rgb(0, 0, 0), $alpha: 0.1);
+    }
+    &__details {
+        position: relative;
+        width: 75%;
+        padding: 2rem;
+        padding-left: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        h1 {
+            font-size: 4rem;
+            font-weight: 600;
+            font-family: 'Avenir', sans-serif;
+            padding-top: 1rem;
+            margin: 0;
+        }
+        p {
+            margin: 1rem 0;
+            font-size: 2.2rem;
+            font-weight: 500;
+            font-family: 'Avenir', sans-serif;
+        }
+        .info {
+            margin-top: 4rem;
+            text-align: left;
+        }
+    }
+
+    .edit {
+        position: absolute;
+        right: 3rem;
+        img {
+            width: 30px;
+        }
+    }
+}
+.sizes {
+    margin-top: 0rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 85%;
+    &__size {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0.7rem 0.2rem;
+        padding: 1.6rem 1.2rem;
+        background-color: rgba($color: whitesmoke, $alpha: 0.9);
+        border: 1px solid rgba($color: #000000, $alpha: 0.7);
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-family: 'Lato', sans-serif;
+        transition: 0.3s all;
+        &:not(.sizes__size--out_of_stock):hover {
+            color: white;
+            background-color: rgba($color: #145979, $alpha: 0.8);
+        }
+        &--selected {
+            color: white;
+            background-color: rgba($color: #145979, $alpha: 0.8);
+        }
+        &--out_of_stock {
+            opacity: 0.3;
+        }
+    }
+}
+
+.addBtn {
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    background-color: $blue;
+    cursor: pointer;
+}

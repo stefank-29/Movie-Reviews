@@ -1,0 +1,77 @@
+input,
+button,
+textarea,
+select {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $grey;
+    border-radius: 4px;
+    outline: none;
+    &.input {
+        &--error {
+            border-color: red;
+        }
+    }
+    &.button {
+        margin-right: auto;
+        margin-top: 2rem;
+        background-color: brown;
+        cursor: pointer;
+        &.save {
+            display: inline;
+            margin-top: 3rem;
+            color: white;
+            background: $yellow;
+            width: 20%;
+            align-self: center;
+            &:hover {
+                background: #d3a10b;
+            }
+        }
+        &:hover {
+            background-color: rgb(199, 67, 67);
+        }
+        &.delete {
+            margin-top: 3rem;
+            color: white;
+            background: $yellow;
+            width: 20%;
+            align-self: center;
+            background-color: rgb(199, 67, 67);
+        }
+    }
+}
+
+label {
+    text-align: left;
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.8rem;
+    padding: 1.2rem 0 1rem;
+    display: block;
+}
+
+.form {
+    background: rgba($color: #ffffff, $alpha: 0.97);
+    padding: 3rem 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        margin: 0;
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid $grey;
+    }
+}
+
+.error {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: left;
+    color: $blue;
+}

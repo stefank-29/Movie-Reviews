@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+
+
+
+{% for movie in movies%}
+<div class="card">
+
+   <a href="/movies/{{value|private:"_id"}}">
+      <p>{{movie}}</p>
+   </a>
+   <p>{{movie.ageRestrict}}</p>
+   <p>{{movie.genre}}</p>
+   <p>{{movie.releaseDate}}</p>
+
+</div>
+{% endfor%}    
+   
+{% endblock %}    

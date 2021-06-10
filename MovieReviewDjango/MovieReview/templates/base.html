@@ -1,0 +1,66 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+   <head>
+        <title>Admin</title>
+
+        <link rel="stylesheet" type="text/css" href="{% static 'MovieReview/style.css' %}" />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="{% static 'blog/images/icons/blogger.png' %}"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="styelsheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&amp;display=swap"
+            type="text/css"
+        />
+    </head>
+    <body>
+      
+
+
+<ul class='bar'>
+ <li><a  class="active" href="{% url 'movies' %}">Movie</a></li>
+ <li><a class="active" href="{% url 'comments' %"}>Comments</a></li>
+
+
+ </ul>
+
+
+{% block content %}
+
+
+{% endblock%}
+
+    </body>
+</html>
+
+<style>
+    ul  {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #333;
+   }
+   
+   li {
+     float: left;
+   }
+   
+   li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+   
+   li a:hover {
+     background-color: #111;
+   }
+   </style>
