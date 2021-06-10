@@ -29,6 +29,8 @@ Run project:
 ```
 cd server
 
+npm install
+
 npm start
 ```
 
