@@ -10,7 +10,7 @@ This is a movie reviews website built with Vue/Node.js
 
 # Table of contents
 
--   [Project Title](#sneakers-shop)
+-   [Movie Reviews](#movie-reviews)
 -   [Table of contents](#table-of-contents)
 -   [Installation](#installation)
 -   [Technologies](#built-with)
