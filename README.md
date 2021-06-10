@@ -21,7 +21,7 @@ This is a movie reviews website built with Vue/Node.js
 Clone repository:
 
 ```
-git clone https://github.com/stefank-29/MovieReviews.git
+git clone https://github.com/stefank-29/Moview-Reviews.git
 ```
 
 Run project:
