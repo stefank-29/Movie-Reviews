@@ -6,6 +6,8 @@ This is a movie reviews website built with Vue/Node.js
 
 ![Image of project](movies.gif)
 
+## [Live demo of the project](https://movie-reviews-website.herokuapp.com/)
+
 # Table of contents
 
 -   [Project Title](#sneakers-shop)
